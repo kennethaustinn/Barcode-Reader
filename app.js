@@ -1,11 +1,29 @@
 let DBR = require("dynamsoft-node-barcode");
-(async()=>{
-    let reader = await DBR.BarcodeReader.createInstance();
-    let results = await reader.decode('C:\\Users\\kenne\\Desktop\\Barcode Scanner\\Testaufgabe-1.jpg');
-    for(let result of results){
-        console.log(result.barcodeText);
-    }
-    reader.destroy();
-    await DBR.BarcodeReader._dbrWorker.terminate();
-    process.exit();
-})();
+const pdf = require('pdf-poppler');
+
+let option = {
+    format : 'jpeg',
+    out_dir : '.\\',
+    out_prefix : 'temp',
+    page : 1
+}
+pdf.convert("C:\\Users\\kenne\\Desktop\\Barcode Scanner\\Testaufgabe.pdf" , option)
+    .then(
+        () => {
+            (async()=>{
+                let reader = await DBR.BarcodeReader.createInstance();
+                for(let result of await reader.decode(".\\temp-1.jpg")){
+                    console.log(result.barcodeText);
+                }
+                reader.destroy();
+                await DBR.BarcodeReader._dbrWorker.terminate();
+                process.exit();
+            })();
+        }
+        )
+        .catch(
+            (error) => {
+                console.log(error); 
+            }
+        )
+    
