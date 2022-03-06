@@ -3,7 +3,7 @@
 * Verantwortlich : Kenneth Austin
 * Auftraggeber : Dionysius Irza Refiano
 
-* Anforderungen : 
+Anforderungen : 
 - Die APP soll mit Node JS entwickelt werden
 - Die APP soll die PDF Datei einlesen und dann den PDF417 Barcode einlesen
 - Die APP soll das Ergebnis vom Einlesen des Barcodes anzeigen. Es reicht das Ergebnis in der Konsole auszugeben.
