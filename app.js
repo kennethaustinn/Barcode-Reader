@@ -10,7 +10,7 @@ let option = {
     out_prefix : 'temp',
     page : 1
 }
-pdf.convert("C:\\Users\\kenne\\Desktop\\Barcode Scanner\\Testaufgabe.pdf" , option)
+pdf.convert(".\\Testaufgabe.pdf" , option)
     .then(
         () => {
             (async()=>{
