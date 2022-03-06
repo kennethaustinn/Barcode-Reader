@@ -1,6 +1,9 @@
 let DBR = require("dynamsoft-node-barcode");
 const pdf = require('pdf-poppler');
 
+// Free Trial Product Keys
+DBR.BarcodeReader.productKeys = "t0068NQAAAKYoYtBbnd2lBHiL+Gr2TRhbr/cmctjQzb8ttAHtOzrTIwqrABRkYRtfqYKUGd8X1J9VGP078TfkPIOqWa6e/9E="; 
+
 let option = {
     format : 'jpeg',
     out_dir : '.\\',
