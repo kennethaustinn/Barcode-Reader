@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "dynamsoft-node-barcode": "^8.8.7"
+  }
+}
