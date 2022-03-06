@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "dynamsoft-node-barcode": "^8.8.7"
+    "dynamsoft-node-barcode": "^8.8.7",
+    "pdf-poppler": "^0.2.1"
   }
 }
