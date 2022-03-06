@@ -17,6 +17,6 @@ Anforderungen :
 Die Installation sollte über das Klonen des ganzen Projekts erfolgen.
 Dabei sollten keine Probleme auftauchen.
 
-Bei dem App selbst habe ich 2 Packages genutzt einmal für das Einlesen des Barcodes(dynamsoft-node-barcode) und für die Umwandlung von PDF zu image Datei (pdf-poppler). Da leider das Dynamsoft kann nur Bilder Datei erkennen.
+Bei dem App selbst habe ich 2 Packages genutzt einmal für das Einlesen des Barcodes(**dynamsoft-node-barcode**) und für die Umwandlung von PDF zu image Datei (**pdf-poppler**). Da leider das Dynamsoft kann nur Bilder Datei erkennen.
 
-Für die Anwendung der App man kann direkt über das Terminal / Eingabeaufforderung der Befehl node app.js oder die App einfach kompilieren und run lassen. Bei der Konsole wird das Ergebnis vom Barcode angezeigt.
+Für die Anwendung der App man kann direkt über das Terminal / Eingabeaufforderung der Befehl node app.js oder die App einfach kompilieren und run lassen. In der Konsole wird das Ergebnis vom Barcode angezeigt.
